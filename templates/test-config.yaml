@@ -27,9 +27,10 @@ data:
     }
 
     @test "Testing GoCD application is accessible through ingress" {
+      {{- $clusterIP := .Values.clusterIP -}}
       {{- if .Values.server.ingress.enabled }}
         {{- range .Values.server.ingress.hosts }}
-          echo 192.168.99.101 {{ . }} >> /etc/hosts
+          echo {{ $clusterIP }} {{ . }} >> /etc/hosts
           curl http://{{ . }}
         {{- end }}
       {{- else }}
