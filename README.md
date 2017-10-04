@@ -115,6 +115,19 @@ a previously configured Persistent Volume Claim can be used.
 | `server.persistence.homego.size`         | The size of the PVC                       | `1Gi`                |
 | `server.persistence.homego.storageClass` | The PVC storage class name                | `nil`                |
 
+### Agent `/godata` persistence Values
+
+
+| Parameter                                | Description                               | Default              |
+| ---------------------------------------- | ----------------------------------------- | -------------------- |
+| `agent.persistence.enabled`             | Enable the use of a GoCD PVC              | `false`              |
+| `agent.persistence.godata.pvName`       | Provide the name of a PV for `godata` PVC | `godata-gocd-server` |
+| `agent.persistence.godata.name`         | The PVC name                              | `godata-pvc`         |
+| `agent.persistence.godata.accessMode`   | The PVC access mode                       | `ReadWriteOnce`      |
+| `agent.persistence.godata.size`         | The size of the PVC                       | `1Gi`                |
+| `agent.persistence.homego.storageClass` | The PVC storage class name                | `nil`                |
+
+
 
 ### Existing PersistentVolumeClaim
     
