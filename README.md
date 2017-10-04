@@ -1,7 +1,7 @@
 # GoCD Helm Chart
 A GoCD Helm chart for Kubernetes. [GoCD](https://www.gocd.org/) is an Open source continuous delivery server to model and visualize complex workflows with ease.
 
-> #### **Warning**: GoCD helm chart is still under development. Users are not expected to use it in production!
+> ### **Warning**: GoCD helm chart is still under development. Users are not expected to use it in production!
 
 # Introduction
 This chart bootstraps a single node GoCD server and a GoCD Agent deployment with configurable agent count on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
