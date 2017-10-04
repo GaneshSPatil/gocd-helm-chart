@@ -94,26 +94,26 @@ a previously configured Persistent Volume Claim can be used.
 ### Server `/godata` persistence Values
 
 
-| Parameter                              | Description                               | Default              |
-| -------------------------------------- | ----------------------------------------- | -------------------- |
-| `server.persistence.enabled`           | Enable the use of a GoCD PVC              | `false`              |
-| `server.persistence.godata.pvName`     | Provide the name of a PV for `godata` PVC | `godata-gocd-server` |
-| `server.persistence.godata.name`       | The PVC name                              | `godata-pvc`         |
-| `server.persistence.godata.accessMode` | The PVC access mode                       | `ReadWriteOnce`      |
-| `server.persistence.godata.size`       | The size of the PVC                       | `1Gi`                |
-| `server.persistence.storageClass`      | The PVC storage class name                | `nil`                |
+| Parameter                                | Description                               | Default              |
+| ---------------------------------------- | ----------------------------------------- | -------------------- |
+| `server.persistence.enabled`             | Enable the use of a GoCD PVC              | `false`              |
+| `server.persistence.godata.pvName`       | Provide the name of a PV for `godata` PVC | `godata-gocd-server` |
+| `server.persistence.godata.name`         | The PVC name                              | `godata-pvc`         |
+| `server.persistence.godata.accessMode`   | The PVC access mode                       | `ReadWriteOnce`      |
+| `server.persistence.godata.size`         | The size of the PVC                       | `1Gi`                |
+| `server.persistence.homego.storageClass` | The PVC storage class name                | `nil`                |
 
-### Server `/godata` persistence Values
+### Server `/homego` persistence Values
 
 
-| Parameter                              | Description                               | Default              |
-| -------------------------------------- | ----------------------------------------- | -------------------- |
-| `server.persistence.enabled`           | Enable the use of a GoCD PVC              | `false`              |
-| `server.persistence.godata.pvName`     | Provide the name of a PV for `godata` PVC | `godata-gocd-server` |
-| `server.persistence.godata.name`       | The PVC name                              | `godata-pvc`         |
-| `server.persistence.godata.accessMode` | The PVC access mode                       | `ReadWriteOnce`      |
-| `server.persistence.godata.size`       | The size of the PVC                       | `1Gi`                |
-| `server.persistence.storageClass`      | The PVC storage class name                | `nil`                |
+| Parameter                                | Description                               | Default              |
+| ---------------------------------------- | ----------------------------------------- | -------------------- |
+| `server.persistence.enabled`             | Enable the use of a GoCD PVC              | `false`              |
+| `server.persistence.homego.pvName`       | Provide the name of a PV for `godata` PVC | `godata-gocd-server` |
+| `server.persistence.homego.name`         | The PVC name                              | `godata-pvc`         |
+| `server.persistence.homego.accessMode`   | The PVC access mode                       | `ReadWriteOnce`      |
+| `server.persistence.homego.size`         | The size of the PVC                       | `1Gi`                |
+| `server.persistence.homego.storageClass` | The PVC storage class name                | `nil`                |
 
 
 ### Existing PersistentVolumeClaim
