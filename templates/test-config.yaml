@@ -25,15 +25,3 @@ data:
     @test "Testing GoCD application is accessible through service" {
       curl http://{{ .Chart.Name }}-server-service:{{ .Values.server.service.httpPort }}/go
     }
-
-    @test "Testing GoCD application is accessible through ingress" {
-      {{- $clusterIP := .Values.clusterIP -}}
-      {{- if .Values.server.ingress.enabled }}
-        {{- range .Values.server.ingress.hosts }}
-          echo {{ $clusterIP }} {{ . }} >> /etc/hosts
-          curl http://{{ . }}
-        {{- end }}
-      {{- else }}
-        echo 'Ingress disabled. Skipping test..'
-      {{- end }}
-    }
